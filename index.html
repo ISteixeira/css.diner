@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://flukeout.github.io/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSS Diner - Where we feast on CSS Selectors!</title>
+    <script type="text/javascript" async="" src="./CSS Diner - Where we feast on CSS Selectors!_files/js"></script><script async="" src="./CSS Diner - Where we feast on CSS Selectors!_files/analytics.js.download"></script><script src="./CSS Diner - Where we feast on CSS Selectors!_files/jquery.js.download" type="text/javascript" charset="utf-8"></script><style type="text/css" id="operaUserStyle">
+  video {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(1.00 255 255 255));
+  }
+</style>
+    <script src="./CSS Diner - Where we feast on CSS Selectors!_files/levels.js.download" type="text/javascript" charset="utf-8"></script>
+    <script src="./CSS Diner - Where we feast on CSS Selectors!_files/restaurant.js.download" type="text/javascript" charset="utf-8"></script>
+    <script src="./CSS Diner - Where we feast on CSS Selectors!_files/jquery.mCustomScrollbar.min.js.download"></script><script src="./CSS Diner - Where we feast on CSS Selectors!_files/jquery.mousewheel.min.js.download"></script>
+
+    <link rel="icon" type="image/png" href="https://flukeout.github.io/favicon.png">
+    <link href="./CSS Diner - Where we feast on CSS Selectors!_files/css" rel="stylesheet">
+    <link href="./CSS Diner - Where we feast on CSS Selectors!_files/css(1)" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS Diner - Where we feast on CSS Selectors!_files/jquery.mCustomScrollbar.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./CSS Diner - Where we feast on CSS Selectors!_files/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    <meta property="og:url" content="http://cssdiner.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CSS Diner">
+    <meta property="og:description" content="A fun game to help you learn and practice CSS selectors.">
+    <meta property="og:image" content="https://flukeout.github.io/images/fb-share.jpg">
+  <style type="text/css"></style></head>
+
+  <body style="">
+    <div class="left-col mCustomScrollbar _mCS_1 mCS-autoHide"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position: relative; top: 0px; left: 0px;" dir="ltr">
+
+      <header>
+        CSS Diner
+        <div class="logo">
+          <plate><apple></apple></plate>
+        </div>
+        <span class="share-menu">
+          Share
+          <a class="share-twitter" type="twitter" href="https://flukeout.github.io/#"></a>
+          <a class="share-facebook" type="facebook" href="https://flukeout.github.io/#"></a>
+          <a class="share-email" type="email" href="https://flukeout.github.io/#"></a>
+        </span>
+      </header>
+
+      <h2 class="order">Select first apple</h2>
+
+      <div class="note">
+        <h3>No worries, you've got this!</h3>
+        <p>
+          You're about to learn CSS Selectors!
+          Selectors are how you pick which element to apply styles to.
+        </p>
+
+        <h4>Exhibit 1 - A CSS Rule</h4>
+
+        <pre>p {
+   margin-bottom: 12px;
+}</pre>
+
+        <p>
+          Here, the "p" is the selector (selects all &lt;p&gt; elements) and applies the margin-bottom style.
+        </p>
+        <p>
+          To play, type in a CSS selector in the editor below to select the correct items on the table.If you get it right, you'll advance to the next level.
+        </p>
+        <p>
+          Hover over the items on the table to see their HTML markup.
+        </p>
+        <p>
+          Get help with selectors on the right! →
+        </p>
+        <a class="note-toggle" href="https://flukeout.github.io/#" style="display: none;">Ok, got it!</a>
+      </div>
+
+      <a class="note-toggle" href="https://flukeout.github.io/#" style="display: none;">Help, I'm stuck!</a>
+
+      <div class="game-wrapper">
+        <div class="table-wrapper" style="opacity: 1; transform: rotateX(20deg); width: 478px;">
+          <div class="table-surface"></div>
+          <div class="nametags"></div>
+          <div class="table">
+    <orange class="small" style="width: 30px;"></orange>
+    <apple class="strobe" style="width: 60px;"></apple>
+    <apple class="small" style="width: 30px;"></apple>
+    <apple class="" style="width: 60px;"></apple>
+    <apple class="small" style="width: 30px;"></apple>
+    <plate class="" style="width: 100px;">
+      <orange class="small" style="width: 30px;"></orange>
+      <orange class="" style="width: 60px;"></orange>
+    </plate>
+    </div>
+        </div>
+        <div class="table-edge" style="opacity: 1; width: 478px;">
+          <div class="table-leg"></div>
+          <div class="table-leg"></div>
+        </div>
+      </div>
+
+      <div class="editor">
+
+        <div class="editor-pane">
+          <div class="input-header">
+            <div class="file-name">style.css</div> CSS Editor
+          </div>
+          <div class="file-window css-view">
+            <div class="line-numbers">
+              1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20
+            </div>
+              <input class="input-strobe" type="text" placeholder="Type in a CSS selector"><span class="plus">+</span><div class="enter-button enterhit" style="width: 41px;">enter</div>
+            <div>
+            {<br>
+            /* Styles would go here. */<br>
+            }
+            </div>
+            <div class="help">
+              <br>
+              /* <br>
+              Type a number to skip to a level.<br>
+              Ex → "5" for level 5 <br>*/
+            </div>
+          </div>
+        </div>
+
+        <div class="editor-pane html-view">
+          <div class="input-header">
+            <div class="file-name">table.html</div>
+            HTML Viewer
+          </div>
+          <div class="file-window">
+            <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20</div>
+            <div class="markup"><div>&lt;div class="table"&gt;<div>&lt;orange  class="small" /&gt;</div><div>&lt;apple /&gt;</div><div>&lt;apple  class="small" /&gt;</div><div>&lt;apple /&gt;</div><div>&lt;apple  class="small" /&gt;</div><div>&lt;plate&gt;<div>&lt;orange  class="small" /&gt;</div><div>&lt;orange /&gt;</div>&lt;/plate&gt;</div>&lt;/div&gt;</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="what-is-this">
+        <p>
+          Made by <a href="http://www.twitter.com/flukeout">@flukeout</a> — come say hi!
+        </p>
+        <p>
+          Have feedback or questions? Please file an isssue on <a href="https://github.com/flukeout/css-diner/issues">the Github repo</a>.
+        </p>
+      </div>
+
+      <div class="helper" style="display: none; top: 122.904px; left: 738.277px;">&lt;plate&gt;&lt;/plate&gt;</div>
+
+    </div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; display: block; height: 596px; max-height: 756px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><!-- /left-col -->
+
+    <div class="right-col">
+
+      <div class="help-wrapper">
+
+        <h1 class="level-header completed">
+          <span class="level-text">Level 20 of 32</span>
+          <span class="checkmark"></span>
+        </h1>
+
+        <div class="level-nav">
+          <a class="previous" href="https://flukeout.github.io/#"></a>
+          <a class="next" href="https://flukeout.github.io/#"></a>
+        </div>
+
+        <div class="level-progress"><div class="progress" style="width: 62.5%;"></div></div>
+
+        <div class="display-help">
+          <h3 class="selector-name">First of Type Selector</h3>
+          <h2 class="title">Select the first element of a specific type</h2>
+          <h3 class="syntax">:first-of-type</h3>
+          <div class="hint">Selects the first element of that type within another element.</div>
+          <h4 class="examples-title" style="display: block;">Examples</h4>
+          <div class="examples"><div class="example"><strong>span:first-of-type</strong> selects the first <tag>span</tag> in any element.</div></div>
+        </div>
+      </div>
+
+      <div class="level-menu mCustomScrollbar _mCS_2 mCS-autoHide"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0" style="max-height: none;"><div id="mCSB_2_container" class="mCSB_container" style="position: relative; left: 0px; top: 0px;" dir="ltr">
+        <h2>Choose a level</h2>
+        <div class="levels"><!-- level links are inserted here--><a class="completed"><span class="checkmark"></span><span class="level-number">1</span>A</a><a class="completed"><span class="checkmark"></span><span class="level-number">2</span>A</a><a class="completed"><span class="checkmark"></span><span class="level-number">3</span>#id</a><a class="completed"><span class="checkmark"></span><span class="level-number">4</span>A&nbsp;&nbsp;B</a><a class="completed"><span class="checkmark"></span><span class="level-number">5</span>#id&nbsp;&nbsp;A</a><a class="completed"><span class="checkmark"></span><span class="level-number">6</span>.classname</a><a class="completed"><span class="checkmark"></span><span class="level-number">7</span>A.className</a><a class="completed"><span class="checkmark"></span><span class="level-number">8</span>Put your back into it!</a><a class="completed"><span class="checkmark"></span><span class="level-number">9</span>A, B</a><a class="completed"><span class="checkmark"></span><span class="level-number">10</span>*</a><a class="completed"><span class="checkmark"></span><span class="level-number">11</span>A&nbsp;&nbsp;*</a><a class="completed"><span class="checkmark"></span><span class="level-number">12</span>A + B</a><a class="completed"><span class="checkmark"></span><span class="level-number">13</span>A ~ B</a><a class="completed"><span class="checkmark"></span><span class="level-number">14</span>A &gt; B&nbsp;</a><a class="completed"><span class="checkmark"></span><span class="level-number">15</span>:first-child</a><a class="completed"><span class="checkmark"></span><span class="level-number">16</span>:only-child</a><a class="completed"><span class="checkmark"></span><span class="level-number">17</span>:last-child</a><a class="completed"><span class="checkmark"></span><span class="level-number">18</span>:nth-child(A)</a><a class="completed"><span class="checkmark"></span><span class="level-number">19</span>:nth-last-child(A)</a><a class="completed current"><span class="checkmark"></span><span class="level-number">20</span>:first-of-type</a><a class=""><span class="checkmark"></span><span class="level-number">21</span>:nth-of-type(A)</a><a><span class="checkmark"></span><span class="level-number">22</span>:nth-of-type(An+B)</a><a><span class="checkmark"></span><span class="level-number">23</span>:only-of-type</a><a><span class="checkmark"></span><span class="level-number">24</span>:last-of-type</a><a><span class="checkmark"></span><span class="level-number">25</span>:empty</a><a><span class="checkmark"></span><span class="level-number">26</span>:not(X)</a><a><span class="checkmark"></span><span class="level-number">27</span>[attribute]</a><a><span class="checkmark"></span><span class="level-number">28</span>A[attribute]</a><a><span class="checkmark"></span><span class="level-number">29</span>[attribute="value"]</a><a><span class="checkmark"></span><span class="level-number">30</span>[attribute^="value"]</a><a><span class="checkmark"></span><span class="level-number">31</span>[attribute$="value"]</a><a><span class="checkmark"></span><span class="level-number">32</span>[attribute*="value"]</a></div>
+        <a class="reset-progress" href="https://flukeout.github.io/#">Reset Progress</a>
+      </div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; display: block; height: 496px; max-height: 756px;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+
+      <div class="level-menu-toggle-wrapper">
+        <div class="level-menu-toggle"></div>
+      </div>
+
+    </div><!-- /right-col -->
+
+  <script>
+    if(location.hostname != "localhost"){
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-62998410-1', 'auto');
+      ga('send', 'pageview');
+    } else {
+      var ga = false;
+    }
+  </script>
+
+  
+
+</body></html>
